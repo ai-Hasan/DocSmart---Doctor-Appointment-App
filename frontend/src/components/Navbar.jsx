@@ -38,7 +38,7 @@ const Navbar = () => {
         </NavLink>
       </ul>
 
-      <div className="flex items-center gap-4">
+      <div className="hidden md:flex items-center gap-4">
         {token ? (
           <div className="flex items-center gap-2 cursor-pointer group relative">
             <img
@@ -83,7 +83,7 @@ const Navbar = () => {
 
       <img
         onClick={() => setShowMenu(true)}
-        className="w-6 md:hidden"
+        className="w-8 ml-32 md:hidden"
         src={assets.menu_icon}
         alt="menu icon"
       />
